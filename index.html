@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+    <script>
+        function previewTax(){
+            const income = document.getElementById('income').value;
+            const tax = render(parseInt(income));
+            document.getElementById('tax').innerHTML = `$${tax}`;
+        }
+    </script>
+    <script src="./script.js"></script>
+<body>
+    <div class="container">
+            <input class="inputBox" id="income" type="number" placeholder="Type your Annual Income">
+            <button onclick="previewTax()" class="calcluteButton" id="calculateButton">Calculate Tax</button>
+        <p class="taxShowArea" id="tax"></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 280px;
+    margin: 40px auto;
+}
+.inputBox, .calcluteButton{
+    display: block;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid #010101;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+.calcluteButton{
+    background: #cf6565;
+    color: #fff;
+    border: none;
+}
+.taxShowArea{
+    font-size: 32px;
+    font-weight: bold;
+    color: #010101;
+    text-align: center;
+}
